@@ -1,0 +1,27 @@
+{
+    "name": "cma/cma-image",
+    "description": "The cma Image Package",
+    "license": "AGPL-3.0",
+    "require": {
+        "php": ">=7.1.0",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "topthink/framework": "^6.0"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "autoload": {
+        "psr-4": {
+            "cma\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "cma\\ImageService"
+            ]
+        }
+    }
+}
